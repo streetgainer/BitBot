@@ -9,7 +9,7 @@ var indicator = function(options) {
   this.firstCandleDone = false;
 
   _.bindAll(this, 'calculate', 'setPosition');
-
+//This checks options AFInc and AFmax
   if(!'AFIncrement' in options || !'maximumAF' in options) {
     var err = new Error('Invalid options for PSAR indicator, exiting.');
     this.logger.error(err.stack);
